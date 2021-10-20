@@ -1,6 +1,6 @@
 # statistics_calculator
 
-A new Flutter project.
+An app to solve the Statistics problem of professor Garcia 
 
 ## Getting Started
 
