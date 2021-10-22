@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class TextFieldCustom extends StatefulWidget {
-  var _controller = TextEditingController();
+  var controller = TextEditingController();
   TextField({controller}) {
-    this._controller = controller;
+    this.controller = controller;
   }
 
   @override
@@ -11,6 +11,7 @@ class TextFieldCustom extends StatefulWidget {
 }
 
 class _TextFieldCustomState extends State<TextFieldCustom> {
+  TextFieldCustom controller = TextFieldCustom();
   @override
   Widget build(BuildContext context) {
     return Padding(
