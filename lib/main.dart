@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List<int> nums = [];
   var _controller = TextEditingController();
   void _storeData() {}
-  Widget _addTextField<Wudget>() {
+  Padding _addTextField() {
     return Padding(
       padding: const EdgeInsets.all(24.0),
       child: TextField(
@@ -84,6 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   '$_counter',
                   style: Theme.of(context).textTheme.headline4,
                 ),
+                _addTextField(),
               ],
             )
           ],
