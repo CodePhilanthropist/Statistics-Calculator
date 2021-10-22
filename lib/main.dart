@@ -29,6 +29,9 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  List<int> nums = [];
+
+  void _storeData() {}
 
   void _incrementCounter() {
     setState(() {
@@ -60,7 +63,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: TextField(
                     decoration: InputDecoration(
                       hintText: "Enter data",
-                      labelText: "Number",
+                      labelText: "Number ${_counter + 1}",
+                      labelStyle: TextStyle(fontSize: 24),
                       border: OutlineInputBorder(),
                     ),
                     keyboardType: TextInputType.number,
