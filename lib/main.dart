@@ -61,6 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     decoration: InputDecoration(
                       hintText: "Enter data",
                       labelText: "Number",
+                      border: OutlineInputBorder(),
                     ),
                     keyboardType: TextInputType.number,
                   ),
