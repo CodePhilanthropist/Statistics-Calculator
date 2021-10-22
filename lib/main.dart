@@ -32,31 +32,9 @@ class _MyHomePageState extends State<MyHomePage> {
   List<int> nums = [];
   var _controller = TextEditingController();
   void _storeData() {}
-  Padding _addTextField() {
-    return Padding(
-      padding: const EdgeInsets.all(24.0),
-      child: TextField(
-        controller: _controller,
-        onChanged: (text) {
-          setState(() {});
-        },
-        decoration: InputDecoration(
-          hintText: "Enter data",
-          labelText: "Number ${_counter + 1}",
-          labelStyle: TextStyle(fontSize: 24),
-          border: OutlineInputBorder(),
-          suffixIcon: _controller.text.length > 0
-              ? IconButton(
-                  onPressed: () {
-                    _controller.clear();
-                    setState(() {});
-                  },
-                  icon: Icon(Icons.cancel, color: Colors.grey))
-              : null,
-        ),
-        keyboardType: TextInputType.number,
-      ),
-    );
+
+  void _propagateTextField() {
+    var theField = _addTextField();
   }
 
   void _incrementCounter() {
