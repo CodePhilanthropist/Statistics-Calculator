@@ -16,7 +16,9 @@ class _TextFieldCustomState extends State<TextFieldCustom> {
   @override
   Widget build(BuildContext context) {
     TextFieldCustom controls = TextFieldCustom();
+
     var _controller = controls.controller;
+    var _counter = controls.theCounter;
     return Padding(
       padding: const EdgeInsets.all(24.0),
       child: TextField(
