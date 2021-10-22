@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 class TextFieldCustom extends StatefulWidget {
   var controller = TextEditingController();
-  TextField({controller}) {
+  var theCounter = 0;
+  TextField({controller, counter}) {
     this.controller = controller;
+    this.theCounter = counter;
   }
 
   @override
