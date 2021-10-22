@@ -32,6 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List<int> nums = [];
   var _controller = TextEditingController();
   void _storeData() {}
+  void _addTextField() {}
 
   void _incrementCounter() {
     setState(() {
