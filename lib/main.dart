@@ -62,6 +62,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: const EdgeInsets.all(24.0),
                   child: TextField(
                     controller: _controller,
+                    onChanged: (text) {
+                      setState(() {});
+                    },
                     decoration: InputDecoration(
                       hintText: "Enter data",
                       labelText: "Number ${_counter + 1}",
