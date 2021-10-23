@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image(
-              image: AssetImage("assets/images/ctu.png"),
+              image: AssetImage("assets/images/logo.png"),
               height: 200,
               width: 200,
             ),
