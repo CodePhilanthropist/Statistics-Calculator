@@ -49,6 +49,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Image(
+              image: AssetImage("assets/images/ctu.png"),
+              height: 200,
+              width: 200,
+            ),
             Column(
               children: [
                 Text(
