@@ -47,12 +47,22 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Image(
-              image: AssetImage("assets/images/logo.png"),
-              height: 150,
-              width: 150,
+            SizedBox(
+              height: 100,
+            ),
+            Center(
+              child: Container(
+                child: Image(
+                  image: AssetImage("assets/images/logo.png"),
+                  height: 150,
+                  width: 150,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 200,
             ),
             Column(
               children: [
